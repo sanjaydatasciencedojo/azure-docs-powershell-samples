@@ -29,6 +29,9 @@ $sourceVHDURI = 'https://contosostorageaccount1.blob.core.windows.net/vhds/conto
 #This is an optional parameter if you are creating managed disk in the same subscription
 $storageAccountId = '/subscriptions/yourSubscriptionId/resourceGroups/yourResourceGroupName/providers/Microsoft.Storage/storageAccounts/yourStorageAccountName'
 
+#Provide the operating system type. Accepted values are Windows and Linux.
+OsType = "Linux"
+
 #Set the context to the subscription Id where Managed Disk will be created
 Select-AzSubscription -SubscriptionId $SubscriptionId
 
